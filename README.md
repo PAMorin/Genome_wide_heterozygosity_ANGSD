@@ -35,7 +35,7 @@ samtools faidx ${REFDIR}/${REF}
 
 samtools index ${BAMDIR}/${BAMFILE}
 
-# Get scaffold lengths for those that are over 1MB
+## Get scaffold lengths for those that are over 1MB
 
 do this once before running script, so that the scaffold lengths list is already in the OUTDIR
 
@@ -43,14 +43,14 @@ awk '$2 > 1000000 {print $1"\t"$2}' ${REFDIR}/${REF}.fai > ${OUTDIR}/${REF}_1MB_
 
 ################################################################
 
-# Get sliding windows of 1,000,000 bp
+## Get sliding windows of 1,000,000 bp
 
 do this once before running script, so that the scaffold lengths list is already in the OUTDIR
 
 bedtools makewindows -g ${OUTDIR}/${REF}_1MB_scaffold.lengths.txt -w 1000000 | awk '$3 ~ "000000" {print$1":"$2"-"$3}' > ${OUTDIR}/${REF}_1MB_windows.tx
 
 
-# variables
+# Variables
 
 ###############
 
