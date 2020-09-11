@@ -31,6 +31,7 @@ ROH_angsd_1MB_byChrom_SEDNA.sh
 ## Index your fasta and bam files
 
 comment out if this step is already done
+
 samtools faidx ${REFDIR}/${REF}
 
 samtools index ${BAMDIR}/${BAMFILE}
