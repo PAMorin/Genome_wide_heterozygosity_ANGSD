@@ -9,8 +9,11 @@ These are adapted from methods originally described in (Westbury, M.V., Hartmann
 
 PROGRAM/version
 ###############
+
 samtools/1.10
+
 angsd/0.931 
+
 bedtools/2.29.2 
 
 
