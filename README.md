@@ -56,8 +56,11 @@ bedtools makewindows -g ${OUTDIR}/${REF}_1MB_scaffold.lengths.txt -w 1000000 | a
 ###############
 
 THREADS=5
+
 MINDEPTH=20   # 1/3x average coverage
+
 MAXDEPTH=123	# 2x average coverage
+
 MBQ=20  # minimum base quality filter
 	
 
@@ -65,6 +68,7 @@ MBQ=20  # minimum base quality filter
 
 # Running script
 Set the paths to files and scripts in the shell script ROH_angsd_1MB_byChrom_SEDNA.sh
+
 Determine which scaffolds to scan for SNPs and set them as the array numbers (e.g., in the sbatch header: #SBATCH --array=1-20,22,24
 
 ##########################
