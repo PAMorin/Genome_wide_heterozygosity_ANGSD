@@ -63,6 +63,7 @@ MAXDEPTH=123	# 2x average coverage
 
 MBQ=20  # minimum base quality filter
 	
+MAPQ=30  # minimum map quality filter
 
 ####################################################################
 
