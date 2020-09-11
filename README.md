@@ -1,0 +1,1 @@
+# Genome_wide_heterozygosity_ANGSD
