@@ -48,7 +48,7 @@ awk '$2 > 1000000 {print $1"\t"$2}' ${REFDIR}/${REF}.fai > ${OUTDIR}/${REF}_1MB_
 
 do this once before running script, so that the scaffold lengths list is already in the OUTDIR
 
-bedtools makewindows -g ${OUTDIR}/${REF}_1MB_scaffold.lengths.txt -w 1000000 | awk '$3 ~ "000000" {print$1":"$2"-"$3}' > ${OUTDIR}/${REF}_1MB_windows.tx
+bedtools makewindows -g ${OUTDIR}/${REF}_1MB_scaffold.lengths.txt -w 1000000 | awk '$3 ~ "000000" {print$1":"$2"-"$3}' > ${OUTDIR}/${REF}_1MB_windows.txt
 
 
 # Variables
