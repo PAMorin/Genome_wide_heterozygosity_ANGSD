@@ -57,9 +57,7 @@ bedtools makewindows -g ${OUTDIR}/${REF}_1MB_scaffold.lengths.txt -w 1000000 | a
 
 THREADS=5
 
-MINDEPTH=20   # 1/3x average coverage
-
-MAXDEPTH=123	# 2x average coverage
+MEANDEPTH=30   # average depth of coverage
 
 MBQ=20  # minimum base quality filter
 	
