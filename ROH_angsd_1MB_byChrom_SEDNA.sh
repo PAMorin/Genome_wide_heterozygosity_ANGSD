@@ -37,8 +37,9 @@ WINDOWSLIST=${REF}_1MB_windows.txt
 
 # variables
 THREADS=5
-MINDEPTH=20   # 1/3x average coverage
-MAXDEPTH=123	# 2x average coverage
+MEANDEPTH=30 # has to be an integer for mindepth/maxdepth calc below.
+	let MINDEPTH=MEANDEPTH/3  # 1/3x average coverage
+	let MAXDEPTH=MEANDEPTH*2  # 2x average coverage
 MBQ=20  # minimum base quality filter
 MAPQ=30  # minimum map quality filter
 ################################################################
